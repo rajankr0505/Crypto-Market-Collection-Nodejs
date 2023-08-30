@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="app/dist/aos.css" />
+    <link rel="stylesheet" href="app/dist/animate.css" />
+    <link rel="stylesheet" href="app/dist/app.css" />
+
+
+    <link rel="stylesheet" href="CSS/registration.css" />
+    <title>Registration</title>
+  </head>
+  <body>
+
+
+
+<header id="header_main" class="header">
+        <div class="container big">
+          <div class="row">
+            <div class="col-12">
+              <div class="header__body">
+                <div class="header__logo">
+                  <a href="index.html">
+                    <img
+                      id="site-logo"
+                      src="images/logo/btc-01.png"
+                      alt="Peson"
+                      width="160"
+                      height="38"
+                      data-retina="images/logo/btc-01.png"
+                      data-width="160"
+                      data-height="38"
+                    />
+                  </a>
+                </div>
+
+                <div class="header__right">
+                  <nav id="main-nav" class="main-nav">
+                    <ul id="menu-primary-menu" class="menu">
+                      <li
+                        class="menu-item menu-item-has-children menu-current-item"
+                      >
+                        <a href="/">Home</a>
+                      </li>
+                      <li class="menu-item menu-item-has-children">
+                        <a href="#">Explore</a>
+                        <ul class="sub-menu">
+                          <li class="menu-item"><a href="/elplore_nft">NFTs</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu-item">
+                        <a href="/abouts">About</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="/contact">Contact</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="mobile-button"><span></span></div>
+                </div>
+
+                <div class="header__action">
+                  <a href="#" class="search-btn">
+                    <svg
+                      width="21"
+                      height="21"
+                      viewBox="0 0 21 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="9.7659"
+                        cy="9.76639"
+                        r="8.98856"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M16.0176 16.4849L19.5416 19.9997"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                  <a href="/login" class="action-btn"><span>Login</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+    <div class="bg">
+    <div id="login-box">
+      <div  class="left">
+       
+       <form action="/registration" method="POST">
+        <input type="text" name="name" placeholder="Full name" />
+        <input type="text" name="email" placeholder="E-mail" />
+        <input type="text" name="phone" placeholder="Mobile number" />
+        <input type="password" name="password" placeholder="Password" />
+        <input
+          type="password"
+          name="confirmpassword"
+          placeholder="Confirm password"
+        />
+
+        <button type="submit"  class="action-btn"><span>Sign up</span></button>
+        {{!-- <input type="submit" name="signup_submit" value="Sign me " /> --}}
+        </form>
+      </div>
+
+      <div class="right">
+        <span class="loginwith">Sign in with<br />social network</span>
+
+        <button class="social-signin facebook">Log in with facebook</button>
+        <button class="social-signin twitter">Log in with Twitter</button>
+        <button class="social-signin google">Log in with Google+</button>
+      </div>
+      <div class="or">OR</div>
+    </div>
+  </div>
+  </body>
+</html>
